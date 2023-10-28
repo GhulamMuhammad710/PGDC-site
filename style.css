@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-container {
+  position: relative;
+  overflow: hidden;
+  background-color: #262626;
+  z-index: 2;
+}
+.main-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(images/bgimg-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 50%;
+}
+.hero-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* z-index: 2; */
+}
+/* .hero-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(/images/bgimg-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 70%;
+} */
+.head-1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.147);
+    backdrop-filter: blur(15px);
+    /* position: fixed; */
+   
+}
+.logo-area{
+
+}
+.logo-1{
+width: 150px;
+}
+.menu-btn-area{
+  display: none;
+}
+.nav-ul{
+display: flex;
+}
+.nav-li{
+list-style: none;
+
+}
+.nav-link{
+color: white;
+text-decoration: none;
+padding: 20px;
+}
+.nav-link:hover{
+border-bottom: 2px solid white;
+color: rgb(219, 219, 219);
+}
+.head-btn{
+display: flex;
+gap: 20px;
+padding: 0px 10px;
+}
+.spon-btn-1{
+border: none;
+padding: 10px 20px;
+border-radius: 5px 0px 0px 5px;
+font-weight: 600;
+cursor: pointer;
+}
+.spon-btn-1:hover{
+background-color: rgba(255, 255, 255, 0.26);
+backdrop-filter: blur(10px);
+border: 1px solid white;
+color: rgb(255, 255, 255);
+}
+.reg-btn-1{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0px 5px 5px 0px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.reg-btn-1:hover{
+    background-color: rgba(255, 255, 255, 0.26);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    }
+
+
+    /*.........................hero section.................................*/
+.hero-section{
+width: 100%;
+height: 600px;
+/* border: 2px solid white; */
+display: flex;
+position: relative;
+
+}
+.hero-text-content{
+    max-width: 500px;
+    position: absolute;
+    bottom: 10px;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.hero-text-content h1{
+    font-size: 4rem;
+color: rgb(255, 255, 255);
+}
+.hero-text-content h3{
+color: rgb(255, 255, 255);
+font-weight: 400;
+}
+.hero-text-content h2{
+max-width: 300px;
+color: rgb(229, 255, 0);
+background-color: black;
+padding: 20px;
+animation-duration: 3s;
+animation-name: slidein;
+animation-timing-function: ease-in-out;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+}
+@keyframes slidein{
+    from{
+      color: chartreuse;
+    }
+    to{
+    color: blueviolet;
+    }
+}
+
+
+
+/* ABOUT SECTION START HERE.......................////............................ */
+
+.about-sec{
+color: #ffffff;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+width: 100%;
+position: relative;
+padding: 50px 0px;
+}
+.about-text-content{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+.about-text-content h1{
+font-size: 3rem;
+}
+.about-text-content h3{
+font-weight: 400;
+}
+.about-text-content .about-btn{
+
+}
+
+
+
+.about-detail-items{
+  width: 45%;
+  display: flex;
+  gap: 50px 20px;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.adi-box{
+width: 40%;
+height: 250px;
+/* text-align: center; */
+/* background-color: #5e5e5e; */
+padding: 10px;
+}
+.adi-box h4{
+  font-weight: 400;
+}
+.adi-box img{
+  width: 50px;
+}
+
+.about-btn{
+  border: none;
+  background: none;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 2s;
+  animation: btn-move;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes btn-move{
+from{
+  padding: 10px 20px;
+}
+to{
+  padding: 10px 40px;
+  border: 2px solid rgb(74, 74, 144);
+}
+}
+
+/*............................/////..........showCase AREA ............................../////*/
+
+
+.showCase{
+padding: 20px 14px;
+}
+.showCase-btn-area{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.sc-btn{
+border: none;
+width: 300px;
+height: 130px;
+font-size: 1.3rem;
+font-weight: 600;
+border-radius: 20px;
+cursor: pointer;
+background: none;
+color: white;
+border: 2px solid white;
+position: relative;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.sc-btn:hover{
+  border: none;
+}
+.sc-btn:before{
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0%;
+  height: 100%;
+  background-color: rgb(74, 74, 144);
+  z-index: -1;
+  transition: 2s;
+}
+
+.sc-btn:hover::before{
+  width: 100%;
+}
+.sc-btn img{
+  width: 40px;
+  margin-right: 10px;
+
+}

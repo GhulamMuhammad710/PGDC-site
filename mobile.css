@@ -1,0 +1,75 @@
+@media (max-width: 480px) {
+  /*.........................header in mobile*/
+  #head-1 {
+    justify-content: space-between;
+    padding: 30px 10px;
+    border: none;
+  }
+  #menu-btn-area {
+    display: inline-block;
+    cursor: pointer;
+  }
+  #menu-btn-area img {
+    width: 40px;
+  }
+  #nav-bar {
+    display: none;
+  }
+  #head-btn-area {
+    display: none;
+  }
+  #logo-area img {
+    width: 80px;
+  }
+  /*.............................. HERO AREA START  ..........................*/
+  #hero-sec {
+    padding: 40px 0px;
+  }
+  #hero-text-area {
+    align-items: center;
+    text-align: center;
+  }
+  #hero-text-area .hero-heading {
+    font-size: 2rem;
+  }
+  #hero-text-area .hero-subheading {
+    font-size: 1rem;
+  }
+  #hero-text-area button {
+    padding: 8px 15px;
+  }
+  #hero-img-area {
+    height: 300px;
+  }
+
+  /*.............................. ABOUT AREA START  ..........................*/
+  #about-sec {
+    flex-direction: column;
+  }
+  #about-text-content {
+    width: 100%;
+  }
+  #about-imp-box {
+    width: 100%;
+    justify-content: center;
+  }
+  .about-box {
+    width: 90%;
+    background-color: #c9ada7;
+    padding: 30px 40px;
+    border-radius: 10px;
+  }
+  .about-box h1 {
+    color: #22223b;
+  }
+  .about-box h4 {
+    font-weight: 400;
+    color: #000000;
+  }
+  #about-text-content h1 {
+    font-size: 2rem;
+  }
+  #about-text-content h3{
+    font-size: 1rem;
+  }
+}

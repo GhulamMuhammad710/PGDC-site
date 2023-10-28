@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*.............................GLOBAL ELEMENTS...........................*/
+
+:root {
+  --primary-color: #22223b;
+  --secondary-color: #9a8c98;
+  --secondary-color2: #4a4e69;
+  --accent-color: #c9ada7;
+  --accent-color: #f2e9e4;
+  --heading-font: 2.5rem;
+  --subheading-font: 1.2rem;
+}
+
+#main-container {
+  position: relative;
+  background-color: var(--primary-color);
+  overflow: hidden;
+}
+
+/*..............................GLOBAL ELEMENT END..........................*/
+/*.............................. HEADER AREA START  ..........................*/
+
+#head-1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0px;
+  gap: 20px;
+  border-bottom: 1px solid white;
+}
+#logo-area img {
+  width: 120px;
+}
+#menu-btn-area {
+  display: none;
+}
+#nav-bar ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#nav-bar li {
+list-style: none;
+margin-left: 30px;
+}
+#nav-bar a {
+ color: var(--accent-color);
+ text-decoration: none;
+ padding: 10px;
+}
+#nav-bar a:hover {
+ color: var(--secondary-color);
+ border-bottom: 2px solid var(--secondary-color);
+}
+#head-btn-area button {
+border: none;
+font-weight: 600;
+padding: 15px 30px;
+border-radius: 5px;
+transition: 1s;
+cursor: pointer;
+background-color: var(--accent-color);
+color: black;
+
+}
+#head-btn-area button:hover {
+background-color: var(--secondary-color2);
+color: white;
+
+}
+
+
+/*..............................HEADER END..........................*/
+/*.............................. HERO AREA START  ..........................*/
+
+#hero-sec{
+color: var(--secondary-color);
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding: 80px 0px;
+flex-wrap: wrap;
+gap: 30px;
+}
+#hero-text-area{
+max-width: 500px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: flex-start;
+gap: 20px;
+}
+#hero-text-area .hero-heading{
+font-size: var(--heading-font);
+color: white;
+}
+#hero-text-area .hero-subheading{
+font-weight: 400;
+font-size: var(--subheading-font);
+}
+#hero-text-area button{
+  border: none;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 5px;
+  transition: 1s;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: black;
+}
+#hero-text-area button:hover {
+  background-color: var(--secondary-color2);
+  color: white;
+  
+  }
+#hero-img-area{
+width: 600px;
+height: 500px;
+border-radius: 20px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+z-index: 2;
+overflow: hidden;
+}
+#hero-img-area::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(images/gamingImg1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 100%;
+  transition: 2s;
+}
+
+/*.............................. ABOUT AREA START  ..........................*/
+
+#about-sec{
+  color: var(--primary-color);
+background-color: var(--secondary-color);
+position: relative;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-around;
+padding: 50px 0px;
+gap: 20px;
+}
+#about-text-content{
+width: 40%;
+display: flex;
+flex-direction: column;
+gap: 15px;
+align-items: flex-start;
+padding: 15px;
+}
+#about-text-content h1{
+font-size: var(--heading-font);
+}
+#about-text-content h3{
+font-weight: var(--subheading-font);
+font-weight: 400;
+color: var(--secondary-color2);
+}
+.about-btn{
+border: none;
+background: none;
+border: 2px solid var(--secondary-color2);
+color: var(--secondary-color2);
+font-weight: 600;
+padding: 10px 30px;
+border-radius: 20px;
+cursor: pointer;
+}
+#about-imp-box{
+width: 40%;
+position: relative;
+display: flex;
+flex-wrap: wrap;
+gap: 40px;
+}
+.about-box{
+width: 40%;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+.about-box img{
+width: 70px;
+}
+.about-box h1{
+
+}
+.about-box h4{
+font-weight: 400;
+}
